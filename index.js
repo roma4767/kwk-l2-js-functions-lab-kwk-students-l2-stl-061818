@@ -19,7 +19,7 @@ function distanceTravelledInFeet(streetFirst, streetSecond) {
 }
 
 function calculatesFarePrice(start, destination) {
-  let distance1 = (destination - start) * 264;
+  let distance1 = (destination*264) - (start*264);
   let distance2 = Math.abs(distance1)
   
   if (distance2 <= 400) {
